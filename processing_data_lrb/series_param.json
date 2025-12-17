@@ -1,0 +1,17 @@
+{
+	"M": {
+		"name": ["2"],
+		"bias": true,
+		"reg_target": "None"
+	},
+	"mask": {
+		"name": ["5"],
+		"reg": "Translation",
+		"reg_target": "T1",
+		"reg_option": {
+			"reg_com": 0
+		},
+		"bias": true
+	}
+}
+
