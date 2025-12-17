@@ -131,7 +131,7 @@ try:
     df_target['Label'] = matched_labels
 
     # 保存结果
-    output_file = '莞医训练集_Label已匹配.xlsx'
+    output_file = '../莞医训练集_Label已匹配.xlsx'
     df_target.to_excel(output_file, index=False)
 
     print(f"处理完成！文件已保存为: {output_file}")
