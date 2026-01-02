@@ -1,13 +1,13 @@
 {
-	"M": {
-		"name": ["2"],
+	"T2": {
+		"name": ["T2WI"],
 		"bias": true,
 		"reg_target": "None"
 	},
 	"mask": {
-		"name": ["5"],
+		"name": ["merge"],
 		"reg": "Translation",
-		"reg_target": "T1",
+		"reg_target": "T2",
 		"reg_option": {
 			"reg_com": 0
 		},

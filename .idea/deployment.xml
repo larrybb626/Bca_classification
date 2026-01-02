@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="root@172.21.124.27:501 password (2)" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false" showAutoUploadSettingsWarning="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="root@172.21.124.35:501 password" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false" showAutoUploadSettingsWarning="false">
     <option name="confirmBeforeUploading" value="false" />
     <serverData>
       <paths name="root@172.21.124.27:501 password (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/nas_3/LaiRuiBin/Dongguan_project/bca_classification" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@172.21.124.35:501 password">
         <serverdata>
           <mappings>
             <mapping deploy="/nas_3/LaiRuiBin/Dongguan_project/bca_classification" local="$PROJECT_DIR$" web="/" />

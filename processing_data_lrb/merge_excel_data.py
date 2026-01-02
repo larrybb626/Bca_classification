@@ -33,7 +33,7 @@ print("正在读取源文件 1: all_train_data_1222_h5.xlsx ...")
 try:
     # 假设第一列是 Label，第二列是 文件名
     # 根据你的Snippet，这个文件似乎没有标准表头，或者表头是 '1','2'
-    df_src1 = pd.read_excel('all_train_data_1222_h5.xlsx', header=None)
+    df_src1 = pd.read_excel('/nas_3/LaiRuiBin/Bca_MRI/og_data/all_train_data_1222_h5.xlsx', header=None)
 
     # 遍历查找包含 Label (0/1) 和 文件名 (.nii.gz) 的列
     # 简单策略：遍历行，找到像是数据的内容
@@ -58,7 +58,7 @@ except Exception as e:
 # --- 读取源文件 2: 12.07完成莞医训练集独有人名（外送）.xlsx ---
 print("正在读取源文件 2: 12.07完成莞医训练集独有人名（外送）.xlsx ...")
 try:
-    df_src2 = pd.read_excel('12.07完成莞医训练集独有人名（外送）.xlsx', sheet_name='独有人名')
+    df_src2 = pd.read_excel('/nas_3/LaiRuiBin/Bca_MRI/og_data/12.07完成莞医训练集独有人名（外送）.xlsx', sheet_name='独有人名')
     # 根据你的描述和截图
     # 拼音列通常是第二个 '姓名' (Pandas会自动重命名为 姓名.1)
     # Label列是 '有无浸入肌层无0 有1'
@@ -101,7 +101,7 @@ print("-" * 30)
 print("正在处理目标文件: 莞医训练集.xlsx ...")
 
 try:
-    target_path = '莞医训练集.xlsx'
+    target_path = '/nas_3/LaiRuiBin/Bca_MRI/og_data/莞医训练集.xlsx'
     df_target = pd.read_excel(target_path)
 
     # 假设目标名字在 '病人名称' 列 (根据你的Snippet)
@@ -131,7 +131,7 @@ try:
     df_target['Label'] = matched_labels
 
     # 保存结果
-    output_file = '../莞医训练集_Label已匹配.xlsx'
+    output_file = '/nas_3/LaiRuiBin/Bca_MRI/莞医训练集_VI-RADS已匹配.xlsx'
     df_target.to_excel(output_file, index=False)
 
     print(f"处理完成！文件已保存为: {output_file}")
